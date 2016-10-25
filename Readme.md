@@ -233,7 +233,7 @@ Nur Zahlen auszugeben wäre schlecht. Man würde kein ordentliches Programm schr
 Und schon wurde die 37 in ihr zugeordnetes ASCII Zeichen umgewandelt. Im Internet findet man ASCII Tabellen die jeden Dezimalwert eines Zeichens beinhalten.
 
 -------------------------------
-###**2.0 Secret für die Faulen: Inline-Befehle**
+###**2.0 Spezialwissen für die Faulen: Inline-Befehle**
 
 Einen Inline-Befehl haben wir schon kennengelernt: `i`. Er zeigt alle Zellen und deren Werte an. Sowas ist ziemlich nützlich um einfacher zu programmieren:
 
