@@ -263,4 +263,4 @@ ganz schnell mal ein Fehler, da `i` die 0 hinterlassen hat, obwohl man `i` gerne
 
 ###DevGruppe - Die Challenge
 
-Schreibt mir ein Programm, das eine logische Funktion erfüllt und sogar von normalen Usern benutzt werden kann. Es muss nicht perfekt sein, sollte jedoch mindestens mit Ein- und Ausgabe funktionieren.
+Schreibt mir ein Programm in TBI2, das eine logische Funktion erfüllt und sogar von normalen Usern benutzt werden kann. Es muss nicht perfekt sein, sollte jedoch mindestens mit Ein- und Ausgabe funktionieren.
