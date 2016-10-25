@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <math.h>
+#include <sstream>
 #include <string>
 #include <vector>
 
@@ -162,7 +163,13 @@ public:
     std::fstream datei(f, std::ios::in);
     std::string zeile;
     while (getline(datei, zeile, '\n')) {
-      execute(parseBinaryString(zeile));
+      std::string input = zeile;
+      std::istringstream ss(input);
+      std::string token;
+
+      while (std::getline(ss, token, ' ')) {
+        execute(parseBinaryString(token));
+      }
     }
   }
 };
