@@ -77,6 +77,15 @@ Um so eine Datei auszuführen muss der Interpreter mit dem Argument als Datei au
 	tbi2.exe [dateiname]
 Die Dateiendung spielt dabei keine Rolle.
 
+Wir können sogar eine TBI2-Datei in eine Ny++5-Datei umwandeln:
+
+	tbi2.exe -nc [dateiname]
+
+Am Ende wird dann nach einem Dateinamen gefragt, dies ist der Name der fertigen Ny++5-Datei.
+Diese Ny++5-Datei kann dann auch weiterverarbeitet, ausgeführt und oder kompiliert werden.
+
+Von Ny++5 ist es jedoch nicht möglich zu TBI2 zu übersetzen.
+
 #### **0.1.2.2 Befehlszeileninterpreter**
 
 Es ist auch möglich direkt mit dem Interpreter zu arbeiten. Dafür ruft man einfach nur die Anwendung mit einem Doppelklick auf.

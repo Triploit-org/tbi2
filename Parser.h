@@ -113,7 +113,10 @@ public:
       } else {
 
         if (s[i] == '@') {
-          std::cout << std::endl;
+          if (!System.isNC())
+            std::cout << std::endl;
+
+          System.addNypp5Code("@");
           continue;
         }
 

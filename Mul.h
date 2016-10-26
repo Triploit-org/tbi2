@@ -1,5 +1,6 @@
 #include "System.h"
 #include <iostream>
+#include <string>
 
 #ifndef mul
 #define mul

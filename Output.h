@@ -22,7 +22,14 @@ void output_cmd() {
               << "=" << System.getVar(System.getArg2().getID()).getID()
               << " ] Can't find the cell!" << std::endl;
   } else {
-    std::cout << System.getVar(System.getArg2().getValue()).getValue();
+    if (!System.isNC())
+      std::cout << System.getVar(System.getArg2().getValue()).getValue();
+
+    System.addNypp5Code(("   prv " +
+                         System.getVar(System.getArg2().getValue()).getSName() +
+                         ";"));
+
+    System.addNypp5Code("");
   }
 }
 

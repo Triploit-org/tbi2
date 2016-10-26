@@ -1,6 +1,7 @@
 #include "System.h"
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 
 #ifndef OUTPUT_STRING_H
 #define OUTPUT_STRING_H
@@ -24,7 +25,16 @@ void output_string_cmd() {
               << System.getVar(System.getArg2().getID()).getID()
               << " ] Can't find the cell!" << std::endl;
   } else {
-    std::cout << (char)System.getVar(System.getArg2().getValue()).getValue();
+    if (!System.isNC()) {
+      std::cout << (char)System.getVar(System.getArg2().getValue()).getValue();
+    } else {
+      System.addNypp5Code(
+          ("   sti " +
+           std::to_string(
+               System.getVar(System.getArg2().getValue()).getValue()) +
+           ", STMP;"));
+      System.addNypp5Code("   prv STMP;");
+    }
   }
 }
 
